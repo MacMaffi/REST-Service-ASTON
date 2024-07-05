@@ -1,0 +1,23 @@
+
+q
+java:S2095B"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(¹É˜Æúÿÿÿÿ8é—Ò ˆ2
+q
+java:S2095M"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ò’¼—üÿÿÿÿ8é—Ò ˆ2
+l
+java:S2095i"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(âä®¿8é—Ò ˆ2
+»
+java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(½Ó®Ëüÿÿÿÿ8ì—Ò ˆ2
+^
+java:S6909D"<Move this loop-invariant setter invocation out of this loop.(®åáŠýÿÿÿÿ8ó—Ò ˆ2
+A
+java:S6905M"Don't use the query "SELECT *".(ò’¼—üÿÿÿÿ8ü—Ò ˆ2
+<
+java:S6905i"Don't use the query "SELECT *".(âä®¿8‚˜Ò ˆ2
+A
+java:S6905"Don't use the query "SELECT *".(÷î¼ ýÿÿÿÿ8†˜Ò ˆ2
+<
+java:S6905""Don't use the query "SELECT *".(ŸË¬î8‹˜Ò ˆ2
+<
+java:S6905'"Don't use the query "SELECT *".(Ã²õÿ8Ž˜Ò ˆ2
+x
+java:S6912F"VUse "addBatch" and "executeBatch" to execute multiple SQL statements in a single call.(à„´æüÿÿÿÿ8•˜Ò ˆ2

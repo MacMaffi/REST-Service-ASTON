@@ -1,0 +1,15 @@
+
+—
+java:S2095c"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Ö™Æ®ýÿÿÿÿ8«ÜÃ¡…2J$bb1f9f60-fa91-497b-80d7-190cd48b1c51
+—
+java:S2095E"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(ûÙÑ ÿÿÿÿÿ8«ÜÃ¡…2J$278c7313-7abd-48d7-9812-e61d84737d9e
+á
+java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(ÁÃÅ¿ÿÿÿÿÿ8¯ÜÃ¡…2J$c5c0b7d8-4eb8-4bf5-8153-869a0ac980ef
+g
+java:S6905E"Don't use the query "SELECT *".(ûÙÑ ÿÿÿÿÿ8¾ÜÃ¡…2J$0b7cb236-af0f-41e5-94b5-8dd80d16ff35
+q
+java:S1481W".Remove this unused "employees" local variable.(™€‰›8ÌÜÃ¡…2J$670c1b7e-fb94-4063-b979-ce98526cc356
+g
+java:S6905c"Don't use the query "SELECT *".(Ö™Æ®ýÿÿÿÿ8ÍÜÃ¡…2J$25a2e0a7-5fab-45da-af97-9ad45458c81a
+b
+java:S6905 "Don't use the query "SELECT *".(ªÆà‘8ÑÜÃ¡…2J$46d17486-268b-4a89-86f7-9989ab840f6e

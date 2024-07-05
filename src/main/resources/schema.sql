@@ -1,0 +1,28 @@
+CREATE TABLE IF NOT EXISTS employee
+(
+    id BIGINT GENERATED  BY DEFAULT AS IDENTITY PRIMARY KEY,
+    emp_firstName VARCHAR(255) NOT NULL,
+    emp_lastName VARCHAR(255) NOT NULL,
+    position VARCHAR(255) NOT NULL
+);
+
+CREATE TABLE IF NOT EXISTS tasks
+(
+    id BIGINT GENERATED  BY DEFAULT AS IDENTITY PRIMARY KEY,
+    title VARCHAR(255) NOT NULL,
+    status VARCHAR(64),
+    employee_id BIGINT REFERENCES employee ON DELETE CASCADE
+);
+
+CREATE TABLE IF NOT EXISTS activity
+(
+    id BIGINT GENERATED  BY DEFAULT AS IDENTITY PRIMARY KEY,
+    name VARCHAR(255) NOT NULL UNIQUE
+);
+
+CREATE TABLE IF NOT EXISTS employee_activity
+(
+    employee_id BIGINT REFERENCES employee (id),
+    activity_id BIGINT REFERENCES activity (id),
+    CONSTRAINT unique_link UNIQUE (employee_id, activity_id)
+);

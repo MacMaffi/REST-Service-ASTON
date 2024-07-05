@@ -1,0 +1,13 @@
+
+e
+java:S2259Q"HA "NullPointerException" could be thrown; "updateTask" is nullable here.(ÊõÒ¹8âÒ ˆ2
+l
+java:S2095H"OUse try-with-resources or close this "PreparedStatement" in a "finally" clause.(Š×°ä8ëÒ ˆ2
+µ
+java:S6548"˜A Singleton implementation was detected. Make sure the use of the Singleton pattern is required and the implementation is the right one for the context.(¶½±L8ğÒ ˆ2
+<
+java:S6905H"Don't use the query "SELECT *".(Š×°ä8œ‘Ò ˆ2
+<
+java:S6905"Don't use the query "SELECT *".(˜”™Ê8¥‘Ò ˆ2
+<
+java:S6905!"Don't use the query "SELECT *".(äñºñ8¬‘Ò ˆ2
