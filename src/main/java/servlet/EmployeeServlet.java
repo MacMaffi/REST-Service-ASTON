@@ -20,7 +20,7 @@ public class EmployeeServlet  extends HttpServlet {
     private final EmployeeService employeeService = EmployeeServiceImpl.getInstance();
     private final ObjectMapper objectMapper = new ObjectMapper();
 
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         String pathInfo = req.getPathInfo();
         try {
             if (pathInfo == null || pathInfo.equals("/")) {
@@ -39,7 +39,7 @@ public class EmployeeServlet  extends HttpServlet {
     }
 
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    public void doPost(HttpServletRequest req, HttpServletResponse resp) throws  IOException {
         try{
             EmployeeDto employeeDto = objectMapper.readValue(req.getInputStream(), EmployeeDto.class);
             List<Long> activityList = objectMapper.readValue(req.getParameter("activities"), List.class);
@@ -53,7 +53,7 @@ public class EmployeeServlet  extends HttpServlet {
         }
     }
 
-    protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    public void doPut(HttpServletRequest req, HttpServletResponse resp) throws  IOException {
         String pathInfo = req.getPathInfo();
         try {
             if (pathInfo == null || pathInfo.equals("/")) {
@@ -73,7 +73,7 @@ public class EmployeeServlet  extends HttpServlet {
     }
 
     @Override
-    protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    public void doDelete(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         String pathInfo = req.getPathInfo();
         try {
             if (pathInfo == null || pathInfo.equals("/")) {

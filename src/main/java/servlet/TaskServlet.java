@@ -21,7 +21,7 @@ public class TaskServlet extends HttpServlet {
     private final ObjectMapper objectMapper = new ObjectMapper();
 
     @Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    public void doGet(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         String pathInfo = req.getPathInfo();
         try {
             if(pathInfo == null || pathInfo.equals("/")) {
@@ -40,7 +40,7 @@ public class TaskServlet extends HttpServlet {
     }
 
     @Override
-    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    public void doPost(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         try {
             TasksDto tasksDto = objectMapper.readValue(req.getInputStream(), TasksDto.class);
             long id = Long.parseLong(req.getParameter("employeeId"));
@@ -55,7 +55,7 @@ public class TaskServlet extends HttpServlet {
     }
 
     @Override
-    protected void doPut(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    public void doPut(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         String pathInfo = req.getPathInfo();
         try {
             if (pathInfo == null || pathInfo.equals("/")) {
@@ -75,7 +75,7 @@ public class TaskServlet extends HttpServlet {
     }
 
     @Override
-    protected void doDelete(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+    public void doDelete(HttpServletRequest req, HttpServletResponse resp) throws IOException {
         String pathInfo = req.getPathInfo();
         try {
             if (pathInfo == null || pathInfo.equals("/")) {
